@@ -1,0 +1,65 @@
+@import 'components/color';
+
+$primary-color: color("brown", "darken-4") !default;
+$primary-color-light: false !default;
+$primary-color-dark: false !default;
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+$secondary-color: color("brown", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+
+$link-color: color("light-blue", "darken-1") !default;
+
+@import 'materialize.scss';
+
+main{
+  padding-top: 6em;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url('/images/splash-bg.jpeg');
+  background-position: center center;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  margin: 0;
+  padding: auto 1em;
+}
+
+.container {
+  width: 90%;
+}
+
+.custom-container {
+  @extend .z-depth-2;
+  @extend .container;
+  padding: 1em;
+  background: white;
+  border-radius: 10px 10px;
+}
+
+.form-box-width {
+  max-width: 800px;
+}
+
+.recipe-search-box-width {
+  width: 90%;
+}
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "a4",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/import_db/import_xml_data.js && node ./bin/www",
+    "test": "nodemon bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-hbs": "^1.0.4",
+    "express-session": "^1.15.6",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.5",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "xml2js": "^0.4.19"
+  }
+}

@@ -1,0 +1,18 @@
+[x] XML Parser / Database Importer
+[x] Recipe database:
+	[x] Recipes model
+	[x] Recipes controller
+	[x] Recipes API
+		[x] Search
+		[] Open recipe - well, shit
+		[] Edit recipe
+		[] New recipe
+
+[] Authentication:
+	[x] Login view
+	[x] Users model
+	[] Login controller - Remove mongoose
+	[x] Token mechanism / Sessions
+
+[x] Documentation
+	[x] Readme file
